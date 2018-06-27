@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AboutComponent } from './about/about.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public imagesUrl;
+ 
+ngOnInit() {
+    this.imagesUrl = [
+    '../assets/IMAGE_URL3.jpg',
+    '../assets/IMAGE_URL3.jpg',
+    '../assets/IMAGE_URL3.jpg',
+    
+    ];
+}
 }
